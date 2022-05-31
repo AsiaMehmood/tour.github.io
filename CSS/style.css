@@ -1,0 +1,243 @@
+:root{
+    --orange:#e67e22;    /* icons colors */
+    --light-color:#777;  /*Font color*/
+    --border:0.1rem solid rgba(0,0,0,.2); /*0.1 rem border around each box of area*/
+}
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,600;1,100;1,300&display=swap");
+* {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+html {
+  font-size: 63.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scroll-padding-top: 4rem;
+}
+
+html::-webkit-scrollbar {
+  width: 1rem;
+}
+
+html::-webkit-scrollbar-track {
+  background: rgb(255, 254, 254);
+}
+
+html::-webkit-scrollbar-thumb
+{
+  background: #10221b;
+}
+
+section{
+    padding:2rem 7%; /* height and width of each box */
+}
+
+/* _________________________Header/ NavBar started__________________________________ */
+* {
+  outline: none;
+  border: none;
+  text-decoration: none; 
+ }
+ html {
+  font-size: 63.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scroll-padding-top: 4rem;
+} 
+
+.header
+{
+  font-family: 'Poppins', sans-serif;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 1.3rem 9%;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  background-color: rgba(252, 252, 252, 0.404);
+  text-transform: capitalize; /* follow us and contact info  data  */
+	transition: .2s linear;/* follow us and contact info   data flow*/
+}
+
+.header.active {
+  background: rgba(255, 254, 254, 0.568);/* header background color*/
+  box-shadow: 0 0.5rem 1rem rgb(255, 254, 254);
+}
+
+.header .logo {
+  margin-right: auto;
+  font-size: 2.5rem;
+  color: #10221b;
+  font-weight: bolder;
+}
+
+.header .logo i {
+  color: #219150;
+}
+
+.header .navbar a { /* icons setting  home ,about us,blogs ,contact us*/
+  margin-left: 2rem;
+  font-size: 1.7rem;
+  color: #10221b;
+}
+
+.header .navbar a:hover { /* icons bacground color  home ,about us,blogs ,contact us*/
+  color: #219150;
+} 
+
+.header .navbar #nav-close  /* close button settings */
+{ 
+  font-size: 5rem;
+  cursor: pointer;
+  color: #0f8356;
+  display: none;
+}
+
+.header .icons a, /* header  icons bacground color searh and other with menu = this */
+.header .icons div 
+{
+  font-size: 2.5rem;
+  margin-left: 2rem;
+  cursor: pointer;
+  color: #10221b;
+}
+
+.header .icons a:hover, /*button color change   when cursor on  that buttons ,search and menu */
+.header .icons div:hover 
+{
+  color: #08d16c;
+}
+
+.header #menu-btn 
+{
+  display: none;
+}
+
+.search{
+  /* margin-top: 20px; */
+  display: inline;
+  color: black;
+  text-align: center;
+  text-decoration: none;
+}
+
+.search input[type=text]{
+  position: relative;
+  float: left;
+  top:-13px;
+  left: 5%;
+  padding: 6px;
+  font-size: 15px;
+  border-radius: 15px;
+  border: 1px solid #3d3d5888;
+  transition: 0.6s ease;
+}
+
+.search input[type=text]:hover{
+  background-color: #dcdcdc;
+}
+
+
+.list input[type=image]{
+  position: relative;
+  float: right;
+  top:-50px;
+  left: 2%;
+  margin-left: 20%; 
+  padding: 4px;
+  border-radius: 10px;
+  border: 1px solid #00f;
+  transition: 0.6s ease;
+  background-color: #fff;
+}
+
+.list input[type=image]:hover{
+  background-color: #739ac5;
+}
+/* ________________________________POST CONTAINER SATRTED___________________________________ */
+.container{
+    margin-top: 5.5rem;
+    background:url(../images/banner.png) no-repeat;    /*background image*/
+    background-size:cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.container .posts-container .post{
+    width:100%;
+    padding:2rem;
+    background:white;
+    border:var(--border);
+    border-radius: 0.5rem;
+    margin-bottom: 2.5rem;
+}
+
+.container .posts-container .post .image{
+    height: 40rem;
+    width:100%;
+    border-radius: .5rem;
+    object-fit: cover;
+}
+
+.container .posts-container .post .date{
+    padding-top: 2rem;
+    font-size: 1.5rem;
+    color:var(--orange);
+}
+ /*for titles under boxes(containers) */
+.container .posts-container .post .title{
+    font-family:monospace;
+    padding-top: 1.5rem;
+    font-size: 3.5rem;
+    color:#315246;
+}
+ /*for text paras*/
+.container .posts-container .post .text{
+    color:var(--light-color);
+    font-size: 1.6rem;
+    line-height: 1.7;
+    padding:1rem 0;
+}
+
+ /*for user, comment and share icons */
+.container .posts-container .links{
+    border-top: var(--border);
+    margin-top: .5rem;
+    padding-top: 1.5rem;
+    display: flex;
+    align-items: center;
+}
+
+.container .posts-container .links .user{  /*user icon aligned right*/
+    margin-right: auto;
+}
+
+.container .posts-container .links .icon{ /*comment and share icons padding (dist in between)*/
+    padding-right: 1rem;
+}
+
+.container .posts-container .links a{
+    font-size: 1.5rem;
+    color:var(--light-color);
+}
+
+.container .posts-container .links a i{
+    padding-right: .2rem;  
+    color:var(--black);
+}
+
+.container .posts-container .links a:hover{
+    color:var(--orange);
+}
+
+.container .posts-container .links a:hover i{
+    color:var(--orange);
+}

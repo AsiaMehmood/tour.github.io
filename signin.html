@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="entered">
+
+<head>
+  <title> Sign In Form </title>
+  <meta name="viewport" content="width= device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" type="text/css" href="CSS/signin.css">
+</head>
+  <body>
+    <header class="header">
+    
+      <a href="#" class="logo"> <i class="fas fa-hiking"></i> travel. </a> <!--fas fa-hiking from font awesome -->
+  
+      <nav class="navbar">
+          <div id="nav-close" class="fas fa-times"></div>
+          <a href="home\home.html">home</a>
+          <a href="abo.html">about</a>
+          <a href="feedback.html">contact us</a>
+          <a href="post.html">blogs</a>
+          <a href="signup.html">Sign Up</a>
+          <a href="gallery.html">Gallery</a>
+          <a href="destination.html">destination</a>
+        
+      </nav>
+  
+      <div class="icons">
+          <div id="menu-btn" class="fas fa-bars"></div>
+          <div id="search-btn" class="fas fa-search"></div>
+      </div>
+      <div class="search">
+        <form method="POST" action="info.php">
+          <input type="text" name="search_p" placeholder="Search.." size="25">
+      
+          <!-- <input type="image" name="submit_p" src="search_icon.png" alt="Search image" style="width:22;height:22; margin-left: 35px;"> -->
+        </form>
+    </div>
+  </header>
+  
+  <!-- header section ends -->
+
+    <form name="myForm" action ="signin.php" method="POST">
+
+      <div class="login-box">
+
+        <h1> Sign In </h1>
+
+        <div class="textbox">
+           
+          <input type="text" placeholder="Username" name="user" value="" required> 
+
+        </div>
+        <div class="textbox">
+          <input type="password" placeholder="Password" name="pass" value="" maxlength="8" required>
+        </div>
+          
+        <input class="btn" type="submit" name="submit" value="Sign in"> 
+      </div>
+
+    </form>
+    <script src="home\home.js"></script>
+  </body>
+</html>
+
+

@@ -1,0 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2:wght@500&display=swap");
+:root { 
+  --main-bg-color: #bd6418;
+  --font1: "Baloo Bhaina 2", cursive;
+  --font2: "Roboto", sans-serif;
+}
+
+.form-box input, textarea{
+  width: 50vw;
+  padding: 0px 10px;
+  margin: 7px 0;
+  font-size: 18px;
+  font-family: var(--font1);
+  border: 2px solid var(--main-bg-color);
+    border-radius: 10px;
+}

@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta name="viewport" content="width=divice-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <!-- <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" /> -->
+
+	<link rel="stylesheet" type="text/css" href="CSS\destination.css">
+	<title>Destinations</title>
+	<style type="text/css">
+		.container .box .name-text input{
+			position: relative;
+			display: none;
+			background: transparent;
+			border: 1px solid rgb(255, 255, 255);
+			top: -25px;
+			color: rgb(255, 255, 255);
+			text-decoration: none;
+			transition: 0.6s ease;
+			text-align: center;
+		}
+		.btn{
+			padding: 5px 40px;
+		}
+		.btn1{
+			margin: 0px -20px;
+			padding: 5px 40px;
+		}
+		.btn2{
+			padding: 5px 60px;
+		}
+		.btn3{
+			padding: 5px 37px;
+			margin: 0px -2px;
+		}
+		.btn4{
+			padding: 5px 50px;
+		}
+		.btn5{
+			padding: 5px 25px;
+		}
+		.container .box:hover .name-text input{
+			display: block;
+			top: -20px;
+		}
+		.container .box .name-text input:hover{
+			background-color: #fff;
+		    color: #000;
+		}
+		h3{
+			text-align: right;
+			margin-right: 30px;
+			color:#fff;
+			text-decoration:none;
+			position: relative;
+			top:80px;
+		}
+	</style>
+</head>
+<body>
+	<header class="header">
+    
+		<a href="#" class="logo"> <i class="fas fa-hiking"></i> travel. </a> <!--fas fa-hiking from font awesome -->
+	
+		<nav class="navbar">
+			<div id="nav-close" class="fas fa-times"></div>
+			<a href="home\home.html">home</a>
+			<a href="abo.html">about</a>
+			<a href="feedback.html">contact us</a>
+			<a href="post.html">blogs</a>
+			<a href="signup.html">Sign Up</a>
+			<a href="gallery.html">Gallery</a>
+			<a href="destination.html">destination</a>
+		  
+		</nav>
+	
+		<div class="icons">
+			<div id="menu-btn" class="fas fa-bars"></div>
+			<div id="search-btn" class="fas fa-search"></div>
+		</div>
+		<div class="search">
+		  <form method="POST" action="info.php">
+			<input type="text" name="search_p" placeholder="Search.." size="25">
+		
+			<!-- <input type="image" name="submit_p" src="search_icon.png" alt="Search image" style="width:22;height:22; margin-left: 35px;"> -->
+		  </form>
+	  </div>
+	</header>
+	
+	<!-- header section ends -->
+	<!-- <h3><a href="gallery.html">Gallery</a></h3> -->
+	<h1 class="heading"><span>P</span>oupular <span>D</span>estinations</h1>
+
+
+	<!-- --------------------------------------------------------------------------------------------------------- -->
+	<div class="container">
+		<div class="box">
+			<div class="imgBox">
+				<img src="images\destination\fm1.jpg" alt="Faisal_Mosque Image" style="width: auto; height: 270px;">
+			</div>
+			<div class="name-text name-pading1 top1">
+				<h1>FaisalMosque</h1>
+				<form method="POST" action="info.php">
+					<input type="submit" name="fmosque" class="btn1" value="Visit">
+				</form>
+			</div>
+		</div>
+		<div class="box">
+			<div class="imgBox">
+				<img src="images\destination\monal1.jpg" alt="Monal Image" style="width: auto;height: 270px;">
+			</div>
+			<div class="name-text name-pading2 top1">
+				<h1>Monal</h1>
+				<form method="POST" action="info.php">
+					<input type="submit" name="monal" class="btn" value="Visit">
+				</form>
+			</div>
+		</div>
+		<div class="box">
+			<div class="imgBox">
+				<img src="images\destination\rawal1.jpg" alt="Lake Image">
+			</div>
+			<div class="name-text name-pading3 top1">
+				<h1>Rawal Lake</h1>
+				<form method="POST" action="info.php">
+					<input type="submit" name="rawal" class="btn" value="Visit">
+				</form>
+			</div>
+		</div>
+		<div class="box">
+			<div class="imgBox">
+				<img src="images\destination\pirchinasi1.jpg" alt="PirChinasi Image">
+			</div>
+			<div class="name-text name-pading4 top2">  <!--top1 ko change kro gi ok-->  
+				<h1>Pir Chinasi</h1>
+				<form method="POST" action="info.php">
+					<input type="submit" name="pchinasi" class="btn" value="Visit">
+				</form>
+			</div>
+		</div>
+		<!-- -------------------------------------------------------------------------------- -->
+		<div class="box">
+			<div class="imgBox">
+				<img src="images\destination\rawalakot1.jpg" alt="Rawalakot Image">
+			</div>
+			<div class="name-text name-pading5 top2">
+				<h1>Rawalakot</h1>
+				<form method="POST" action="info.php">
+					<input type="submit" name="rkot" class="btn5" value="Visit">
+				</form>
+			</div>
+		</div>
+		<!-- --------------------------------------------------------------------------------- -->
+		<div class="box">
+			<div class="imgBox">
+				<img src="images\destination\neelam1.jpg" alt="Neelam Image">
+			</div>
+			<div class="name-text name-pading6 top2">
+				<h1>Neelam Valley</h1>
+				<form method="POST" action="info.php">
+					<input type="submit" name="neelam" class="btn2" value="Visit">
+				</form>
+			</div>
+		</div>
+		<!-- --------------------------------------------------------------------------- -->
+		<div class="box">
+			<div class="imgBox">
+				<img src="images\destination\shounter5.jpg" alt="Shounter Image">
+			</div>
+			<div class="name-text name-pading7 top3">
+				<h1>Shounter Lake</h1>
+				<form method="POST" action="info.php">
+					<input type="submit" name="shounter" class="btn3" value="Visit">
+				</form>
+			</div>
+		</div>
+
+		<!-- --------------------------------------------------------------------------- -->
+		<div class="box">
+			<div class="imgBox">
+				<img src="images\destination\tolipir1.jpg" alt="ToliPir Image">
+			</div>
+			<div class="name-text name-pading8 top3">
+				<h1>Toli Pir</h1>
+				<form method="POST" action="info.php">
+					<input type="submit" name="toli" class="btn2" value="Visit">
+				</form>
+			</div>
+		</div>
+		<!-- --------------------------------------------------------------------------- -->
+		<div class="box">
+			<div class="imgBox">
+				<img src="images\destination\jhelum1.jpg" alt="Jhelum Image">
+			</div>
+			<div class="name-text name-pading9 top3">
+				<h1>Jhelum Valley</h1>
+				<form method="POST" action="info.php">
+					<input type="submit" name="jhelum" class="btn3" value="Visit">
+				</form>
+			</div>
+		</div>
+		<!-- --------------------------------------------------------------------------- -->
+		<div class="box">
+			<div class="imgBox">
+				<img src="images\destination\naran1.jpg" alt="Naran Image">
+			</div>
+			<div class="name-text name-pading10 top4">
+				<h1>Naran Kaghan</h1>
+				<form method="POST" action="info.php">
+					<input type="submit" name="naran" class="btn4" value="Visit">
+				</form>
+			</div>
+		</div>
+		<!-- --------------------------------------------------------------------------- -->
+		<div class="box">
+			<div class="imgBox">
+				<img src="images\destination\leepa2.jpg" alt="Leepa Image">
+			</div>
+			<div class="name-text name-pading11 top4">
+				<h1>Leepa Valley</h1>
+				<form method="POST" action="info.php">
+					<input type="submit" name="leepa" class="btn4" value="Visit">
+				</form>
+			</div>
+		</div>
+		<!-- --------------------------------------------------------------------------- -->
+		
+	</div>
+	<script src="home\home.js"></script>
+</body>
+</html>

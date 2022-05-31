@@ -1,0 +1,406 @@
+
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap'); */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,600;1,100;1,300&display=swap");
+ *{
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+/*
+html {
+	
+ position:relative; */
+  /* background-size: cover; */
+  
+  /* overflow-x: hidden;
+  scroll-behavior: smooth;
+  scroll-padding-top: 4rem;
+}
+      
+html{    
+  scroll-behaviour: smooth;
+    
+} */
+.background{
+      
+    /* The background image will change whenever
+    we load the page */  
+      
+    /* This will make the background that have
+    been added will be darken */  
+    background-image: url(../about.jpg);
+    background-repeat: no-repeat;
+    background-blend-mode:darken;
+    background-size:cover;
+}
+      
+.firstsection{
+      
+    /* It is to make the height of the 
+    viewport to be 100 */  
+    height:100vh;
+}
+      
+.box-main{
+      
+    /* This is to display the contact us and the 
+    sentences below it to be displayed in flex */
+    display:flex;
+    justify-content:center;
+    align-items:center;
+      
+    /* This is to display the text to have
+    a color of white */  
+    color:rgb(7, 175, 111);
+    max-width:60%;
+      
+    /* Now we will set the margin to auto */
+    /* This will make all the text to be 
+    displayed at the center of the page */  
+    margin:auto;
+      
+    /* This will make the text to display at
+    the center of the page vertically */  
+    /* height:80%; */
+}
+      
+.firstHalf{    
+    /* width:75%; */
+    display:flex;
+      
+    /* It is to specify the direction of 
+    the flexible items */
+    flex-direction:column;
+    justify-content:center
+}
+/* This is used to make the text to 
+appear bigger */  
+/* Now we have used a font here to distinguish 
+itself from the next text */  
+.text-big{
+    font-family: 'Poppins', sans-serif;
+      vertical-align: auto;
+    /* The text to have a style of bold */
+     font-weight: bold;
+      color:rgb(38, 78, 53);
+    /* The size of the text to be appearing as
+    bigger to distinguish itself from the text 
+    in the class text-small */  
+    font-size: 47px;
+      
+    /* The text to be aligned at center */  
+    text-align:center;
+}
+      
+.text-small{    
+    font-family: 'sans-serif', cursive;
+    font-size: 25px;
+    text-align:center;
+	color:rgb(10, 139, 60);
+    vertical-align: auto;
+}
+.service{
+width:1200px;
+/* background-color: rgb(221, 174, 116); */
+ background:url(../images/blog-1.jpg) no-repeat;
+  background-size:cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+#service{  
+  width: 1100px; 
+  margin:34px;
+  display:flex;
+  /* flex-direction:column; */
+  justify-content:center
+}
+      
+#service .box{
+      
+    /* This is for the background of the box
+    to make all the boxes seperatable from 
+    each other */  
+    padding:20px;
+    margin:50px 100px;
+    color:rgb(0, 0, 0);
+    /* font-size: 14; */
+    font-weight: 400;
+    /* color:rgb(0, 8, 4); */
+    font-size: 16px;
+    vertical-align: auto;
+    /* To make the box have a better looking
+    than rectangular shape */  
+    /* border-radius:30px;
+    background-color:rgb(204, 223, 137) */
+}
+
+
+      
+#services .box p{
+    background-color: rgb(10, 219, 149);
+    /* This is for the text that we have written 
+    to define the image that we have used */  
+    font-family:sans-serif;
+      
+    /* This is to make the text to be 
+    aligned at center */  
+    text-align:center;
+    font-size: 40px;
+    
+}
+      
+.btn{
+    padding:8px 20px;
+    margin:7px 0;
+      vertical-align: auto;
+    /* The radius of the border will have a width of 
+    2px and the type of border will be solid. The 
+    border will have a border of white depending on 
+    what type of image we have used as background */
+    border:2px solid rgb(39, 97, 63);
+      
+    /* Here we have used border-radius to make 
+    the search button appear better */
+    border-radius:8px;
+      
+    /* To make the button have the color 
+    of background */
+    background:none;
+      
+    /* To make the text of the button have 
+    the color of white */  
+    color:rgb(41, 134, 80);
+    cursor:pointer;
+}
+      
+.btn-sm{
+    padding:6px 10px;
+    vertical-align: auto;
+}
+      
+/* This is used here in case if we want to 
+make the text appear at center */  
+.center{
+    font-weight: bold;
+    font-family: 'poppins', sans-serif;
+    text-align: center;
+    color:rgb(5, 32, 16);
+    font-size: 20px;
+    text-decoration:none;
+    vertical-align: auto;
+}
+      
+.text-footer {  
+    text-align: center;  
+    padding: 30px 0;  
+    font-family: 'poppins', sans-serif;  
+    display: flex;  
+    justify-content: center; 
+    font-size: 20px; 
+    vertical-align: auto;
+}
+span{
+    font-weight: bold;
+    text-align: center;  
+    font-family: sans-serif; 
+    
+    color:rgb(2, 17, 66);
+    font-size: 30px;
+    text-decoration:none;
+}
+
+section 
+{
+   padding: 5rem 9%; /*about data */
+} 
+/* ------------------------------------------------------------------------- */
+
+* {
+  outline: none;
+  border: none;
+  text-decoration: none; 
+ }
+ html {
+  font-size: 63.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scroll-padding-top: 4rem;
+} 
+
+.header
+{
+  font-family: 'Poppins', sans-serif;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 1.3rem 9%;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  background-color: rgba(252, 252, 252, 0.493);
+  text-transform: capitalize; /* follow us and contact info  data  */
+	transition: .2s linear;/* follow us and contact info   data flow*/
+}
+
+.header.active {
+  background: rgba(255, 254, 254, 0.979);/* header background color*/
+  box-shadow: 0 0.5rem 1rem rgb(255, 254, 254);
+}
+
+.header .logo {
+  margin-right: auto;
+  font-size: 2.5rem;
+  color: #10221b;
+  font-weight: bolder;
+}
+
+.header .logo i {
+  color: #219150;
+}
+
+.header .navbar a { /* icons setting  home ,about us,blogs ,contact us*/
+  margin-left: 2rem;
+  font-size: 1.7rem;
+  color: #10221b;
+}
+
+.header .navbar a:hover { /* icons bacground color  home ,about us,blogs ,contact us*/
+  color: #219150;
+} 
+
+.header .navbar #nav-close  /* close button settings */
+{ 
+  font-size: 5rem;
+  cursor: pointer;
+  color: #0f8356;
+  display: none;
+}
+
+.header .icons a, /* header  icons bacground color searh and other with menu = this */
+.header .icons div 
+{
+  font-size: 2.5rem;
+  margin-left: 2rem;
+  cursor: pointer;
+  color: #10221b;
+}
+
+.header .icons a:hover, /*button color change   when cursor on  that buttons ,search and menu */
+.header .icons div:hover 
+{
+  color: #08d16c;
+}
+
+.header #menu-btn 
+{
+  display: none;
+}
+
+.search{
+  /* margin-top: 20px; */
+  display: inline;
+  color: black;
+  text-align: center;
+  text-decoration: none;
+}
+
+.search input[type=text]{
+  position: relative;
+  float: left;
+  top:-13px;
+  left: 5%;
+  padding: 6px;
+  font-size: 15px;
+  border-radius: 15px;
+  border: 1px solid #3d3d5888;
+  transition: 0.6s ease;
+}
+
+.search input[type=text]:hover{
+  background-color: #dcdcdc;
+}
+
+
+.list input[type=image]{
+  position: relative;
+  float: right;
+  top:-50px;
+  left: 2%;
+  margin-left: 20%; 
+  padding: 4px;
+  border-radius: 10px;
+  border: 1px solid #00f;
+  transition: 0.6s ease;
+  background-color: #fff;
+}
+
+.list input[type=image]:hover{
+  background-color: #739ac5;
+}
+/* ------------------------------------------------------------------- */
+/*import  media url  setting */
+@media (max-width: 1200px)
+{
+  /* .header {
+    padding: 2rem;
+  } */
+  section {
+    padding: 3rem 2rem;
+  }
+
+@media (max-width: 991px)
+{ 
+  html
+  {
+    font-size: 95%;
+  } 
+  
+
+ @media (max-width: 768px) {
+  .header #menu-btn {
+    display: inline-block;
+  }
+  .header .navbar {
+    position: fixed;
+    top: 0;
+    left: -110%;
+    background: #fff;
+    z-index: 10000;
+    width: 35rem;
+    height: 100%;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .header .navbar.active
+  {
+    left: 0;
+    box-shadow: 0 0 0 100vw rgba(0, 0, 0, 0.8);
+  }
+  .header .navbar a {
+    margin: 1rem 0;
+    font-size: 3rem;
+  }
+  .header .navbar #nav-close 
+  {
+    display: block;
+    position: absolute;
+    top: 1rem;
+    right: 2rem;
+  }
+  
+} 
+
+@media (max-width: 450px) {
+  html {
+    font-size: 80%;
+  }
+ .heading {
+    font-size: 3rem;
+  }
+}
+}
+}
